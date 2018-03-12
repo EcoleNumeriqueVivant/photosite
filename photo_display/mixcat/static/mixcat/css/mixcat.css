@@ -1,0 +1,20 @@
+body{
+  background-color: gray;
+}
+
+
+/* .kity {
+  padding-top: 60px;
+} */
+
+#catimage{
+  width:800px;
+}
+
+.bandeau {
+  width: auto;
+  height: 60px;
+  background-color: lightgreen;
+  margin-bottom: 50px;
+
+}
