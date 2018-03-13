@@ -7,14 +7,15 @@ body{
   padding-top: 60px;
 } */
 
-#catimage{
-  width:800px;
-}
+/* #catimage{
+  width:600px;
+} */
 
 .bandeau {
   width: auto;
   height: 60px;
-  background-color: lightgreen;
+  background-color: green;
   margin-bottom: 50px;
+
 
 }
