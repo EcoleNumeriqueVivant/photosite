@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'mixcat.apps.MixcatConfig',
+    'random_image'
 ]
 
 MIDDLEWARE = [

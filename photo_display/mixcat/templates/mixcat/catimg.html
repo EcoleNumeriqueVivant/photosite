@@ -1,6 +1,9 @@
 {% extends 'mixcat/base.html' %}
 {% block content %}
   <div>
-    <img src="../static/mixcat/img/chat02.jpg" id="catimage">
+    <img src="{% load random_image ../static/mixcat/img/ %}" id="catimage">
+  </div>
+  <div>
+    <a class="btn btn-warning btn-lg" href='http://127.0.0.1:8000'>Home</a>
   </div>
 {% endblock %}
