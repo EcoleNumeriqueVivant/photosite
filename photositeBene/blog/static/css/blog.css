@@ -1,3 +1,6 @@
+body {
+ background-color: #C5C8C9;   
+}
 
 .page-header {
     background-color: #90C3D4; 
@@ -6,7 +9,7 @@
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    color: #ffffff;
+    color: white;
     font-family: 'Phosphate', cursive;
     font-size: 30pt;
     text-decoration: none;
@@ -16,9 +19,21 @@
     margin-left: 40px;
 }
 
+.post h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 20pt;
 }
-.post h2, h3 {
-    font-family: 'Phosphate', cursive;
+
+.post h3 {
+    color: black;
+    font-family: 'SignPainter', cursive;
+    font-size: 15pt;
+}
+
+.post p {
+    color: black;
+    font-family: 'Arial', cursive;
+    font-size: 8pt;
 }
 
 .date {
