@@ -1,0 +1,17 @@
+body{
+  background-color: gray;
+}
+
+
+/* #catimage{
+  width:600px;
+} */
+
+.bandeau {
+  width: auto;
+  height: 60px;
+  background-color: green;
+  margin-bottom: 50px;
+
+
+}
