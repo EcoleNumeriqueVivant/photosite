@@ -1,0 +1,26 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Le Blog d'Hubertmaie</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <style>
+        </style>
+    </head>
+    <body>
+      <div class="page-header">
+          <h1><a href="">Le Blog d'Hubertmaie</a></h1>
+          <br></br>
+      </div>
+
+      <div class="content container">
+             <div class="row">
+                 <div class="col-md-8">
+                 {% block content %}
+                 {% endblock %}
+                 </div>
+             </div>
+      </div>
+    </body>
+</html>

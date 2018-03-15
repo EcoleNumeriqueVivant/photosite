@@ -1,0 +1,16 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+  {% for post in posts %}
+    <div>
+        <h2>{{ post.title }}</a></h2>
+        <p><i><b><a href="{% url 'post_detail' pk=post.pk %}">publié: {{ post.published_date }}</a></b></i></p>
+        <p>{{ post.text|linebreaksbr }}</p>
+        <img src="{{ post.cat_choices }}" alt="{{ post.cat_choices }}"/>
+        <br/>
+    </div>
+  {% endfor %}
+  <br/><br/>
+  <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"> Nouveau post</span></a>
+  <br/>
+{% endblock %}
