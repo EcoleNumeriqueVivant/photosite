@@ -24,7 +24,6 @@ SECRET_KEY = '-14qrwxkqmoj2hi4mups(+in1i4xy%)enbbx^k14)15dwegbp#'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-'benecosvel.pythonanywhere.com'
 ]
 
 # Application definition
