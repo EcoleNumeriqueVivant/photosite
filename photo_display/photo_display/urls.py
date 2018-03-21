@@ -15,11 +15,12 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-from mixcat import views
+
+from . import views
+
 
 urlpatterns = [
-    url(r'^$', views.index),
-    url(r'^mixcat/', views.catpict),
-    url(r'^mixcat/', include('mixcat.urls')),
+    url(r'^$', views.home),
+    url(r'mixcat/', include('mixcat.urls')),
     url(r'admin/', admin.site.urls),
 ]
