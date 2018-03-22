@@ -1,22 +1,10 @@
 {% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
 
 {% block content %}
-  <div>
 
-    <h1>"Hello"</h1>
-
-
-    <h3>{{image}}</h3>
-    <img src={{image}}  >
-
-
-    {%for image in images%}
-    {%endfor%}
-
-
-  </div>
-  <div>
-    <a class="btn btn-warning btn-lg" href='#'>Home</a>
-  </div>
+  <img src="{% static "{{image}}" %}" alt="test01"/>
 
 {% endblock %}
