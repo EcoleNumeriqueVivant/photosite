@@ -1,10 +1,17 @@
 {% extends 'base.html' %}
-{% load staticfiles %}
-{% load static %}
+{% load static from staticfiles %}
+
 
 
 {% block content %}
 
-  <img src="{% static "{{image}}" %}" alt="test01"/>
+
+  <img src=" ../../static/mixcat/img/ {{ catpict }}" height="100" alt="test01"/>
+  <img src="../../static/mixcat/img/chat01.jpg"  height="100" alt="test01"/>
+  <img src="{% static 'mixcat/img/chat03.jpg' %}" alt="chat02">
+
+
+
+
 
 {% endblock %}

@@ -9,4 +9,5 @@ STATIC_IMG = os.path.join(BASE_DIR, "mixcat/static/mixcat/img")
 def catpict(request):
     images = os.listdir(STATIC_IMG)
     image = images[0]
-    return render(request, 'mixcat/mixcat.html', {"images": image})
+    print('jkhids')
+    return render(request, 'mixcat/mixcat.html', {'catpict': image})
