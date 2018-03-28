@@ -1,8 +1,10 @@
 from django.conf.urls import url
-
-from . import views # import views so we can use them in urls.
+from mixcat.views import catpict
+from . import views
 
 
 urlpatterns = [
-    
+    url(r'^$', views.catpict),
+
+
 ]

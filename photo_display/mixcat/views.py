@@ -1,16 +1,14 @@
+from django.shortcuts import render
 import os
 import random
-from django.shortcuts import render
-from mixcat import static
+import time
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-STATIC_IMG = os.path.join(BASE_DIR, "mixcat/static/img")
-images = os.listdir(STATIC_IMG)
-# from .models import Picture
+STATIC_IMG = os.path.join(BASE_DIR, "mixcat/static/mixcat/img")
 
 
-def index(request):
-    return render(request, 'mixcat/index.html', {})
 
 def catpict(request):
-    return render(request, 'mixcat/catimg.html', {})
+    images = os.listdir(STATIC_IMG)
+    image = random.choice(images)
+    return render(request, 'mixcat/mixcat.html', {'imagechat': image})
