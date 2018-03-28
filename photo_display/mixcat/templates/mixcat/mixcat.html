@@ -6,12 +6,13 @@
 {% block content %}
 
 
-  <img src=" ../../static/mixcat/img/ {{ catpict }}" height="100" alt="test01"/>
-  <img src="../../static/mixcat/img/chat01.jpg"  height="100" alt="test01"/>
-  <img src="{% static 'mixcat/img/chat03.jpg' %}" alt="chat02">
+  <img src=" ../../static/mixcat/img/{{imagechat}}" class="images" alt="test01"/>
 
 
-
+<!-- Pour afficher la liste images ecrire: {'imagechat': images} dans mixcat/views.py
+  {% for image in imagechat %}
+      <img src=" ../../static/mixcat/img/{{image}}" height="300" alt="test02"/>
+  {% endfor %} -->
 
 
 {% endblock %}
